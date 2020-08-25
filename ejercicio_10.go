@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func htr() {
 	fmt.Println(tieneParentesisBalanceados("()()()"))
 }
 
@@ -19,9 +19,5 @@ func tieneParentesisBalanceados(unStrinConParentesis string) bool {
 			contador++
 		}
 	}
-	if contador == 0 {
-		return true
-	} else {
-		return false
-	}
+	return contador == 0
 }
